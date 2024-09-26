@@ -20,6 +20,8 @@
     <h1 class="title">Vue project</h1>
 
     <div id="app">
+        <a :href="url">cr7</a>
+
         <div v-if="showBooks">
             <ul>
                 <li v-for="item in books">{{ item.title }} - {{ item.author }}</li>

@@ -17,7 +17,8 @@ const app = Vue.createApp({
                 {
                     title: 'title 3', author: 'author 3'
                 },
-            ]
+            ],
+            url: 'https://en.wikipedia.org/wiki/Cristiano_Ronaldo',
         }
     },
     methods: {
