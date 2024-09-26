@@ -21,7 +21,9 @@
 
     <div id="app">
         <div v-if="showBooks">
-            <h1>{{ title }} - {{ author }} - {{ age }}</h1>
+            <ul>
+                <li v-for="item in books">{{ item.title }} - {{ item.author }}</li>
+            </ul>
         </div>
 
         <button @click="age++">Increase age</button>

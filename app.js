@@ -4,12 +4,20 @@ const app = Vue.createApp({
 
     data() {
         return {
-            title: 'Wuthering heights',
-            author: 'Joshua',
-            age: 20,
             showBooks: true,
             x: 0,
             y: 0,
+            books: [
+                {
+                    title: 'title 1', author: 'author 1'
+                },
+                {
+                    title: 'title 2', author: 'author 2'
+                },
+                {
+                    title: 'title 3', author: 'author 3'
+                },
+            ]
         }
     },
     methods: {
