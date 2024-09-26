@@ -9,13 +9,13 @@ const app = Vue.createApp({
             y: 0,
             books: [
                 {
-                    title: 'title 1', author: 'author 1'
+                    title: 'title 1', author: 'author 1', isFav: true
                 },
                 {
-                    title: 'title 2', author: 'author 2'
+                    title: 'title 2', author: 'author 2', isFav: false
                 },
                 {
-                    title: 'title 3', author: 'author 3'
+                    title: 'title 3', author: 'author 3', isFav: true
                 },
             ],
             url: 'https://en.wikipedia.org/wiki/Cristiano_Ronaldo',

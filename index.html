@@ -14,6 +14,11 @@
             margin: 20px;
             display: inline-block;
         }
+
+        .fav {
+            border: 1px solid green;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +29,7 @@
 
         <div v-if="showBooks">
             <ul>
-                <li v-for="item in books">{{ item.title }} - {{ item.author }}</li>
+                <li v-for="item in books" :class="{ fav: item.isFav }">{{ item.title }} - {{ item.author }}</li>
             </ul>
         </div>
 
